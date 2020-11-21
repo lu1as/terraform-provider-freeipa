@@ -38,6 +38,7 @@ func Provider() terraform.ResourceProvider {
 		ResourcesMap: map[string]*schema.Resource{
 			"freeipa_host":       resourceFreeIPAHost(),
 			"freeipa_dns_record": resourceFreeIPADNSRecord(),
+			"freeipa_service":    resourceFreeIPAService(),
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{},
